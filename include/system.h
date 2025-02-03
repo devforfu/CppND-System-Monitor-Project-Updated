@@ -8,7 +8,13 @@
 #include "processor.h"
 
 class System {
- public:
+private:
+  Processor cpu_ = {};
+  std::vector<Process> processes_ = {}; 
+
+public:
+  System();
+  
   Processor& Cpu();                   // TODO: See src/system.cpp
   std::vector<Process>& Processes();  // TODO: See src/system.cpp
   float MemoryUtilization();          // TODO: See src/system.cpp
@@ -17,11 +23,6 @@ class System {
   int RunningProcesses();             // TODO: See src/system.cpp
   std::string Kernel();               // TODO: See src/system.cpp
   std::string OperatingSystem();      // TODO: See src/system.cpp
-
-  // TODO: Define any necessary private members
- private:
-  Processor cpu_ = {};
-  std::vector<Process> processes_ = {};
 };
 
 #endif

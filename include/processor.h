@@ -2,11 +2,10 @@
 #define PROCESSOR_H
 
 class Processor {
- public:
+public:
   float Utilization();  // TODO: See src/processor.cpp
+private:
 
-  // TODO: Declare any necessary private members
- private:
 };
 
 #endif
